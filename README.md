@@ -1,12 +1,10 @@
 
-# AyameNoises
-[![Chrome Status](https://img.shields.io/badge/Chrome%20Status-Published-19ba00?logo=google-chrome&style=for-the-badge&logoColor=white&labelColor=333333)](https://chrome.google.com/webstore/detail/ayame-noises/adjgpdjmlhloeacjfandkafohmcdhfpm) [![Chrome Status 1.3](https://img.shields.io/badge/Chrome%20Status%20v1.3-LIVE-19BA00?logo=google-chrome&style=for-the-badge&logoColor=white&labelColor=333333)](https://chrome.google.com/webstore/detail/ayame-noises/adjgpdjmlhloeacjfandkafohmcdhfpm)
+# AyameNoises for FireFox
+[![Firefox Status](https://img.shields.io/badge/FireFox%20Status-Published-03C03C?logo=firefox&style=for-the-badge&logoColor=white&labelColor=333333)](https://addons.mozilla.org/en-US/firefox/addon/ayame-noises/)
 <br>
-![Manifest version](https://img.shields.io/badge/Chrome%20Manifest%20Version-v3-F0B6D5?logo=google-chrome&style=for-the-badge&logoColor=white&labelColor=333333) 
+![Manifest version](https://img.shields.io/badge/FireFox%20Manifest%20Version-v3-F0B6D5?logo=firefox&style=for-the-badge&logoColor=white&labelColor=333333)
 <br>
-![Version](https://img.shields.io/badge/Version-v1.2-ef0000?style=for-the-badge&labelColor=333333)
-<br>
-![Cups of coffee](https://img.shields.io/badge/Cups%20of%20coffee%20wasted-55-900c3f?logo=ko-fi&style=for-the-badge&logoColor=white&labelColor=333333)<br>
+![Version](https://img.shields.io/badge/Version-v1.0-ef0000?style=for-the-badge&labelColor=333333) ![Cups of coffee](https://img.shields.io/badge/Cups%20of%20coffee%20wasted-55-900c3f?logo=ko-fi&style=for-the-badge&logoColor=white&labelColor=333333)
 <br>
 Plays a random Nakiri Ayame sound in your browser tab
 <br>
@@ -20,22 +18,23 @@ Current voice count: **58 unique voices**
 Did I miss someone? Please let me know by opening an issue or a pull request. <3
 
 # How to use
-## Method 1: Chrome Web Store (Recommended and easiest)
-1. Install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/ayame-noises/adjgpdjmlhloeacjfandkafohmcdhfpm)
-2. Click the Ayame icon in the top right corner of your browser
-3. ???
-4. Profit
+## Method 1: Firefox Addons
+1. Currently in the works. Stay tuned for updates
+2. Click on the Puzzle piece in the toolbar
+3. Click on Ayame's face
+4. Enjoy
 
 ## Method 2: Manual installation (Advanced)
-1. Download the latest release from the [releases page](https://github.com/DGNVMusic/AyameNoises/releases)
-2. Go to `chrome://extensions/` in your browser and enable developer mode
-3. Click "Load unpacked" and select the folder you downloaded
-4. Follow steps 2-4 from Method 1
-5. Profit
+1. Download the latest release from the [releases page](https://github.com/DGNVMusic/AyameNoises-Firefox/releases)
+2. Go to `about:addons` in your browser and click on the cogwheel
+3. Click "Debug Add-ons" and click on "Load Temporary Add-on..."
+4. Select the "manifest.json" file and open it
+5. Follow steps 2-4 from Method 1
+6. Profit
 
 # How to contribute
 Contributing to this project is really easy. Just follow these steps:
-1. Fork this repository
+1. Fork [this repository](https://github.com/DGNVMusic/AyameNoises/)
 2. Clone your fork
 3. Make your changes
    ### Adding a new voice
