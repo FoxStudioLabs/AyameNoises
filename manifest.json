@@ -1,23 +1,17 @@
 {
-    "name": "Ayame Noises",
-    "description": "Play an Nakiri Ayame noise directly from your browser!",
-    "version": "1.2",
-    "manifest_version": 3,
-    "icons": {
-        "16": "/media/image/icon/16.jpg",
-        "32": "/media/image/icon/32.jpg",
-        "48": "/media/image/icon/48.jpg",
-        "128": "/media/image/icon/128.jpg"
-      },
-    "action": {
-      "default_popup": "popup.html",
-      "default_title": "Play Ayame noise",
-      "default_icon": {            
-        "16": "/media/image/icon/16.jpg",
-        "32": "/media/image/icon/32.jpg",
-        "48": "/media/image/icon/48.jpg",
-        "128": "/media/image/icon/128.jpg"
-      },
-      "author": "FoxStudio Webdevelopment"
-    }
+  "manifest_version": 2,
+  "name": "Play Ayame Noise",
+  "version": "1.0",
+  "description": "Play Ayame Noises from any tab",
+  "icons": {
+    "16": "media/image/icon/16.jpg",
+    "32": "media/image/icon/32.jpg",
+    "48": "media/image/icon/48.jpg",
+    "128": "media/image/icon/128.jpg"
+  },
+  "browser_action": {
+    "default_icon": "media/image/icon/48.jpg",
+    "default_title": "Play Ayame Noise",
+    "default_popup": "popup.html"
   }
+}
