@@ -1,4 +1,4 @@
-    const text = [
+const text = [
         "Eeeeeee.YADA!",
         "Yo Dayo",
         "Banana",
@@ -59,7 +59,7 @@
         "UWA x3",
         "WAHHH"
     ]; // construct the array with text
-    const randomInt = Math.floor(Math.random() * text.length); //Get a random integer 0 - 50 (51 files)
+    const randomInt = Math.floor(Math.random() * text.length); //Get a random integer
     const audio = new Audio(`/media/sound/ayamenoise${randomInt}.mp3`); // Load the sound file based on the randomInt variable
     const quote = document.getElementById("quote") // get quote element
     const audioElement = document.getElementById("audio");
@@ -72,8 +72,11 @@
     audioElement.preload = "metadata";
     //Get the audio duration
     audioElement.addEventListener("loadedmetadata", function () {
-        //prepare the quote to be displayed back to the user
-        quote.innerHTML = "&#8220; " + text[randomInt] + " &#8221;"; // inject text to output element
+        // Prepare the quote to be displayed back to the user
+        // Sanitize the quote because Mozilla requires it
+        // Although no user input is being used, Mozilla still requires it
+        let sanitizedQuote = text[randomInt].replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+        quote.innerHTML = `${sanitizedQuote}`; // Set the quote to the sanitized quote
         const duration = audioElement.duration;
         console.group("RNG Details"); // Start a console group
         console.log("Random Number: " + randomInt); // Log the random number
@@ -86,14 +89,14 @@
         console.groupEnd(); // End the console group
         console.group("A message from the developer"); // Start a group in the console
         console.log("Thank you for using this extension!"); // Log a message to the console
-        console.log("If you have any suggestions, please let me know! on GitHub. @ https://github.com/DGNVMusic/AyameNoises"); // Log a message to the console
+        console.log("If you have any suggestions, please let me know! on GitHub. @ https://github.com/DGNVMusic/AyameNoises-Firefox"); // Log a message to the console
         console.log("If you like this extension, please consider leaving a review on the Chrome Web Store!"); // Log a message to the console
         console.groupEnd(); // End the group in the console
     });
-    //if the audioelement fails to render the audio file throw me an error in the console
+    //if the audioelement fails to render the audio file throw an error in the console
     audioElement.addEventListener("error", function () {
         console.error("Failed to load audio file!");
         console.error("Error: " + audioElement.error);
         console.error("This is NOT a chrome issue. This has to do something with the code. Please report this issue on GitHub.");
-        quote.innerHTML = `🛑 Failed to load audio file! This is probably bug. Report it on <a href="https://github.com/DGNVMusic/AyameNoises">GitHub</a>`; // Set the quote to the error message
+        quote.innerHTML = `🛑 Failed to load audio file! This is probably bug. Report it on <a href="https://github.com/DGNVMusic/AyameNoises-Firefox">GitHub</a>`; // Set the quote to the error message
     });
